@@ -1,13 +1,13 @@
 body {
-  font-family: 'Amatic SC', cursive;
-  color: #D68F24;
+  font-family: "Amatic SC", cursive;
+  color: #d68f24;
 }
 
 header {
   width: 100%;
   height: 15%;
   max-height: 300px;
-  background-color: #F3F4E7;
+  background-color: #f3f4e7;
   display: inline-block;
   position: relative;
 }
@@ -28,55 +28,52 @@ header img {
 .texto-banner {
   position: absolute;
   right: 3vw;
-  bottom: 0.3vw;
+  bottom: 10vw;
 }
-.texto-banner p{
-  font-family: 'Amatic SC', cursive;
+.texto-banner p {
+  font-family: "Amatic SC", cursive;
   text-align: center;
-  font-weight: 550;
-  color: #D68F24;
+  font-weight: 800;
+  color: #d68f24;
   padding: 0;
-  font-size: clamp(1em, 1em + 1vw, 3em);
-
+  font-size: clamp(1em, 2em + 1vw, 3em);
 }
 
-.hoverable{
-  display:inline-block;
+.hoverable {
+  display: inline-block;
   backface-visibility: hidden;
   vertical-align: middle;
-  position:relative;
-  box-shadow: 0 0 1px rgba(0,0,0,0);
-  tranform: translateZ(0);
-  transition-duration: .3s;
-  transition-property:transform;
+  position: relative;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
-.hoverable:before{
-  position:absolute;
+.hoverable:before {
+  position: absolute;
   pointer-events: none;
-  z-index:-1;
-  content: '';
+  z-index: -1;
+  content: "";
   top: 100%;
   left: 5%;
-  height:10px;
-  width:90%;
-  opacity:0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
-  /* W3C */
+  height: 10px;
+  width: 90%;
+  opacity: 0;
   transition-duration: 0.3s;
   transition-property: transform, opacity;
 }
 
-.hoverable:hover, .hoverable:active, .hoverable:focus{
+.hoverable:hover,
+.hoverable:active,
+.hoverable:focus {
   transform: translateY(-5px);
 }
-.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+.hoverable:hover:before,
+.hoverable:active:before,
+.hoverable:focus:before {
   opacity: 1;
   transform: translateY(-5px);
 }
-
-
 
 @keyframes bounce-animation {
   16.65% {
@@ -115,61 +112,62 @@ header img {
   animation-duration: 2s;
 }
 
-@media(min-width: 500px) {
-
+@media (min-width: 500px) {
   nav ul li {
-        box-sizing: border-box;
-        width: 150%;
-        padding-right: 8vw;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
+    box-sizing: border-box;
+    width: 150%;
+    padding-right: 8vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: rgba(243, 244, 231, 0.4);
+    margin-top: 10vw;
   }
-
-
 }
 
 body {
   background-color: #f1f1f1;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   color: #d68f24;
   text-align: center;
 }
 
 h2 {
-  margin-top:3em;
+  margin-top: 3em;
   font-weight: 750;
-  color: #C59440;
+  color: #c59440;
 }
 
-h2, a{
-  color:#D68F24;
+h2,
+a {
+  color: #d68f24;
 }
 
-h2, a:link{
+h2,
+a:link {
   text-decoration: none;
-  color: #C59440;
-
+  color: #c59440;
 }
-h2, a:hover{
+h2,
+a:hover {
   text-decoration: none;
   font-weight: bold;
-  color: #91A191;
+  color: #91a191;
 }
 
-h2, a:active{
-  color: #91A191;
+h2,
+a:active {
+  color: #91a191;
 }
-
 
 .fa-lg {
-  color: #C59440;
+  color: #c59440;
 }
 
 .fa-lg:hover {
   transform: translateY(-5px);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -177,14 +175,90 @@ h2, a:active{
   opacity: 0.5;
 }
 
-.carousel-item p, h5{
+.carousel-item p,
+h5 {
   font-weight: 900;
-  color: #91A191;
-  text-shadow: 0 -1px 2px #fff,0 1px 2px #fff,-1px 0 2px #fff,1px 0 2px #fff;
+  color: #91a191;
+  text-shadow: 0 -1px 2px #fff, 0 1px 2px #fff, -1px 0 2px #fff, 1px 0 2px #fff;
   font-size: 1.5em;
 }
 
 footer {
-  background-color: #F3F4E7;
-  font-size: 5em;
+  background-color: #f3f4e7;
 }
+.cadastro {
+  padding-top: 1em;
+  width: 33%;
+  text-align: center;
+  font-size: clamp(0.5em, 1em + 0.5vw, 3em);
+}
+.cadastur {
+  display: inline-flex;
+  align-items: flex-start;
+  max-width: 10em;
+  margin-left: 0;
+}
+
+.formas-pagto {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 20vw;
+}
+@media (max-width: 560px) {
+  .footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .cadastur {
+    display: inline-flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.whatsapp i {
+  margin-top: 16px;
+}
+
+.footer-icons {
+  justify-content: space-evenly;
+  margin-left: 3em;
+}
+
+td {
+  vertical-align: middle;
+  width: 33%;
+}
+
+@media (max-width: 550px) {
+  .whatsapp {
+    display: none;
+  }
+}
+
+#passeios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#passeios .card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  transition: all 0.3s ease-out;
+  text-align: center;
+  flex: 1 1 150px;
+  margin: 5px;
+}
+
+#passeios .card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+
