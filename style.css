@@ -20,11 +20,7 @@ header img {
 .logo-banner {
   float: left;
 }
-@media screen and (max-width: 585px) {
-  .texto-banner {
-    display: none;
-  }
-}
+
 .texto-banner {
   position: absolute;
   right: 3vw;
@@ -121,8 +117,72 @@ header img {
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    background-color: rgba(243, 244, 231, 0.4);
     margin-top: 10vw;
+  }
+}
+
+@media (max-width: 970px) {
+  #passeios {
+    width: 100% !important;
+  }
+  .card {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  nav ul li {
+    box-sizing: border-box;
+    width: 150%;
+    padding-right: 8vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: 8vw;
+  }
+}
+
+@media (max-width: 1130px) {
+  .texto-banner {
+    top: 0;
+    bottom: 15em;
+    background-color: #f3f4e7;
+  }
+  .text-1 {
+    display: block;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 430px) {
+  .logo-banner {
+    margin-top: 10vh;
+    height: 10vh;
+  }
+}
+
+@media (min-width: 880px) {
+  .logo-banner {
+    height: 20vh;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    height: 15em;
+  }
+  .texto-banner {
+    top: 7em;
+  }
+}
+
+@media (min-width: 431px) {
+  header {
+    height: 15em;
+  }
+  .texto-banner {
+    top: 5vh;
   }
 }
 
@@ -173,14 +233,22 @@ a:active {
 
 .carousel-item {
   opacity: 0.5;
+  height: 40vw;
+  width: 100%;
 }
 
-.carousel-item p,
-h5 {
-  font-weight: 900;
-  color: #91a191;
+.carousel-item h5 {
+  font-weight: 1000;
+  color: black;
   text-shadow: 0 -1px 2px #fff, 0 1px 2px #fff, -1px 0 2px #fff, 1px 0 2px #fff;
-  font-size: 1.5em;
+  font-size: 1.9em;
+}
+
+.carousel-item a {
+  font-weight: 700;
+  color: black;
+  text-shadow: 0 -1px 2px #fff, 0 1px 2px #fff, -1px 0 2px #fff, 1px 0 2px #fff;
+  font-size: 1.3em;
 }
 
 footer {
@@ -248,17 +316,26 @@ td {
 
 #passeios h1 {
   font-size: clamp(3em, 1em + 0.5vw, 3em);
+  margin-top: 1.5em;
+  font-weight: 800;
 }
 
 #passeios h3 {
   margin: 2em;
   color: 145, 161, 145;
+  color: black;
+  font-size: clamp(2em, 1em + 0.5vw, 3em);
+  font-weight: 600;
 }
 
 #passeios p {
   margin: 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: 145, 161, 145;
-  font-size: clamp(1.5em, 1em + 0.5vw, 3em);
+  font-size: clamp(1.2em, 1em + 0.5vw, 3em);
+  line-height: 1.8em;
+  color: black;
+  font-weight: 300;
 }
 
 #passeios .card {
@@ -266,7 +343,6 @@ td {
   box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
   transition: all 0.3s ease-out;
   text-align: center;
-  flex: 1 1 150px;
   margin: 25px;
 }
 
@@ -275,4 +351,55 @@ td {
   cursor: pointer;
 }
 
+#passeios img {
+  height: 35em;
+}
 
+#sobre h3 {
+  font-weight: 900;
+  font-size: clamp(2em, 1em + 0.5vw, 3em);
+}
+
+#sobre p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: clamp(0.5em, 1em + 0.5vw, 3em);
+}
+
+iframe {
+  padding: 5vw;
+}
+
+#transfer h3 {
+  font-weight: 900;
+  font-size: clamp(2em, 1em + 0.5vw, 3em);
+}
+#transfer p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: clamp(0.5em, 1em + 0.5vw, 3em);
+}
+
+#transfer .title {
+  font-weight: 900;
+  font-size: clamp(1.8em, 1em + 0.5vw, 3em);
+  color: #d68f24;
+}
+#transfer li {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: 0.8em;
+}
+#contato h3 {
+  font-weight: 900;
+  font-size: clamp(2em, 1em + 0.5vw, 3em);
+}
+#contato p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  color: black;
+  font-size: clamp(0.5em, 1em + 0.5vw, 3em);
+}

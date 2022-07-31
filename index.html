@@ -22,13 +22,13 @@
     <title>Tour Martinez</title>
   </head>
   <body>
+    <!-- banner -->
     <header>
       <img class="logo-banner" src="images/logo.png" />
       <div class="texto-banner">
         <p>Viva momentos inesquecíveis em Porto de Galinhas e região</p>
       </div>
       <div class="d-flex justify-content-end custom">
-
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
           <button
             class="navbar-toggler"
@@ -59,16 +59,18 @@
             </ul>
           </div>
         </nav>
-
       </div>
     </header>
+    <!-- fim do banner -->
     <h2>
       <a
+        class="text-1"
         href="http://www.instagram.com/passeioemportodegalinhas/"
         target="_blank"
         >Siga nosso perfil no instagram e ganhe um desconto de 10%</a
       >
     </h2>
+    <!-- imagens do carrossel -->
     <div class="container" style="padding: 80px 0" align="center">
       <a
         href="http://www.youtube.com/channel/UCrsjnKudhoKsw30SNKXPYfw"
@@ -101,34 +103,75 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="./images/1.png" alt="First slide" />
+          <img
+            class="d-block w-100"
+            src="./images/index-buggy.png"
+            alt="Passeio de Buggy"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Localização</h5>
-            <p>Breve resumo sobre o roteiro</p>
+            <h5>Passeio de Buggy</h5>
+            <p><a href="#buggy">Clique para ver mais</a></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/2.png" alt="Second slide" />
+          <img
+            class="d-block w-100"
+            src="./images/index-calhetas.png"
+            alt="Praia de Calhetas"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Localização</h5>
-            <p>Breve resumo sobre o roteiro</p>
+            <h5>Praia de Calhetas</h5>
+            <p><a href="#calhetas">Clique para ver mais</a></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/3.png" alt="Third slide" />
+          <img
+            class="d-block w-100"
+            src="./images/index-maragogi.png"
+            alt="Maragogi - AL"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Localização</h5>
-            <p>Breve resumo sobre o roteiro</p>
+            <h5>Maragogi</h5>
+            <p><a href="#maragogi">Clique para ver mais</a></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./images/4.png" alt="Fourth slide" />
+          <img
+            class="d-block w-100"
+            src="./images/index-paramotor.png"
+            alt="Paravoador"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Localização</h5>
-            <p>Breve resumo sobre o roteiro</p>
+            <h5>Paramotor</h5>
+            <p><a href="#paramotor">Clique para ver mais</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./images/index-roteiro-exclusivo.png"
+            alt="Roteiro exclusivo"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Roteiro Exclusivo</h5>
+            <p><a href="#exclusivo">Clique para ver mais</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="./images/index-aleixo.png"
+            alt="Ilha de Santo Aleixo"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Praia de Santo Aleixo</h5>
+            <p><a href="#aleixo">Clique para ver mais</a></p>
           </div>
         </div>
       </div>
@@ -167,84 +210,228 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-<section id="passeios">
-  <h1> Passeios </h1>
-  <div class="row">
-    <div class="card" style="width: 45%">
-      <h3>Praia de Carneiros</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">A Praia dos Carneiros, em Pernambuco, é reconhecida como uma das praias mais bonitas do Brasil e desperta o interesse de muitos viajantes por sua beleza natural. É o lugar perfeito para relaxar e curtir um cenário paradisíaco, cercado por um mar lindo, cheio de piscinas naturais.</p>
+    <!-- fim do carrossel -->
+    <section id="passeios">
+      <h1>Passeios em Porto de Galinhas</h1>
+      <div class="row">
+        <div class="card" style="width: 45%">
+          <h3 id="carneiros">Praia dos Carneiros</h3>
+          <img src="./images/1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              A Praia dos Carneiros, em Pernambuco, é reconhecida como uma das
+              praias mais bonitas do Brasil e desperta o interesse de muitos
+              viajantes por sua beleza natural. É o lugar perfeito para relaxar
+              e curtir um cenário paradisíaco, cercado por um mar lindo, cheio
+              de piscinas naturais.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 45%">
+          <h3 id="maragogi">Maragogi</h3>
+          <img src="./images/Maragogi.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Maragogi é um dos destinos mais bonitos do litoral nordestino! A
+              cidade está localizada no estado de Alagoas, precisamente na área
+              de preservação ambiental denominada Costa dos Corais. E é também
+              conhecida como Caribe Brasileiro, pois as praias possuem
+              características semelhantes às do Caribe.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 45%;">
-      <h3>Maragogi</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Maragogi é um dos destinos mais bonitos do litoral nordestino! A cidade está localizada no estado de Alagoas, precisamente na área de preservação ambiental denominada Costa dos Corais. E é também conhecida como Caribe Brasileiro, pois as praias possuem características semelhantes às do Caribe.</p>
+      <div class="row">
+        <div class="card" style="width: 45%">
+          <h3 id="aleixo">Ilha de Santo Aleixo</h3>
+          <img
+            src="./images/santo-aleixo.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Situada entre Porto de Galinhas e a Praia dos Carneiros, a Ilha de
+              Santo Aleixo é aquele lugar paradisíaco, calmo e perfeito para
+              quem gosta de estar em sintonia com a natureza. Ainda pouco
+              explorada turisticamente, a região foi ocupada por navegadores
+              espanhóis em 1527 e depois por portugueses, franceses e
+              holandeses.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 45%">
+          <h3 id="calhetas">Praia de Calhetas</h3>
+          <img src="./images/calhetas.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Essa praia linda e de uma beleza natural pra ninguém botar defeito
+              fica a apenas cerca de 40km da capital. Não bastasse as águas com
+              tons azuis e verdes, uma das maiores atrações por aqui é a
+              Tirolesa da Praia de Calhetas, uma aventura que levam turistas do
+              alto do morro até o mar quentinho.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="card" style="width: 45%;">
-      <h3>Ilha de Santo Aleixo</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Situada entre Porto de Galinhas e a Praia dos Carneiros, a Ilha de Santo Aleixo é aquele lugar paradisíaco, calmo e perfeito para quem gosta de estar em sintonia com a natureza. Ainda pouco explorada turisticamente, a região foi ocupada por navegadores espanhóis em 1527 e depois por portugueses, franceses e holandeses.</p>
+      <div class="row">
+        <div class="card" style="width: 45%">
+          <h3 id="buggy">Passeio de Buggy</h3>
+          <img src="./images/buggy.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              O passeio de Buggy é conhecido também como “Ponta a ponta”, pois
+              vai de um extremo Norte ao extremo sul do Litoral. De uma lado
+              está a praia de Muro Alto e do outro o Pontal de Maracaípe. A
+              distância entre essas duas praias é de 15 quilômetros.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 45%">
+          <h3 id="mergulho">Mergulho com cilindro</h3>
+          <img src="./images/1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              O Mergulho com Cilindro ou Livre é feito nas piscinas naturais da
+              Praia de Porto de Galinhas que possui uma rica fauna marinha
+              (tartarugas marinhas, arraias, dentões, moreias, lagostas, polvos,
+              uma infinidade de cardumes ), flora e águas cristalinas.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 45%;">
-      <h3>Praia de Calhetas</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Essa praia linda e de uma beleza natural pra ninguém botar defeito fica a apenas cerca de 40km da capital. Não bastasse as águas com tons azuis e verdes, uma das maiores atrações por aqui é a Tirolesa da Praia de Calhetas, uma aventura que levam turistas do alto do morro até o mar quentinho.</p>
+      <div class="row">
+        <div class="card" style="width: 45%">
+          <h3 id="paramotor">Paramotor</h3>
+          <img src="./images/paravoador.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              O Passeio de Paramotor é para quem gosta de muita aventura, em
+              poucos segundos você estará na vista mais previlegiada de Porto de
+              Galinhas.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 45%">
+          <h3 id="exclusivo">Roteiro Exclusivo</h3>
+          <img
+            src="./images/roteiro-exclusivo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Esse roteiro foi montado com olhos para você que vem para Porto de
+              Galinhas e pretende desfrutar 100% da cultura e historias que esse
+              paraíso pode oferecer. Vamos embarcar nessa Aventura ?
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="card" style="width: 45%; ">
-      <h3>Passeio de Buggy</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">O passeio de Buggy é conhecido também como “Ponta a ponta”, pois vai de um extremo Norte ao extremo sul do Litoral. De uma lado está a praia de Muro Alto e do outro o Pontal de Maracaípe. A distância entre essas duas praias é de 15 quilômetros.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 45%;">
-      <h3>Mergulho com cilindro</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">O Mergulho com Cilindro ou Livre é feito nas piscinas naturais da Praia de Porto de Galinhas que possui uma rica fauna marinha (tartarugas marinhas, arraias, dentões, moreias, lagostas, polvos, uma infinidade de cardumes ), flora e águas cristalinas.</p>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="card" style="width: 45%; ">
-      <h3>Paramotor</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">O Passeio de Paramotor é para quem gosta de muita aventura, em poucos segundos você estará na vista mais previlegiada de Porto de Galinhas. </p>
-      </div>
-    </div>
-    <div class="card" style="width: 45%;">
-      <h3>Roteiro Exclusivo</h3>
-      <img src="./images/1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Esse roteiro foi montado com olhos para você que vem para Porto de Galinhas e pretende desfrutar 100% da cultura e historias que esse paraíso pode oferecer.
-
-          Vamos embarcar nessa Aventura ?</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="sobre">
-  Quem somos?
-</section>
-<section id="transfer">
-  Transfer
-</section>
-<section id="contato">
-  Contato
-</section>
+    </section>
+    <section id="sobre">
+      <h3>Quem somos?</h3>
+      <p>
+        A Tour Martinez é uma empresa preocupada em promover o turismo legal e
+        proporcionar momentos inesquecíveis para seus clientes, com os melhores
+        destinos e roteiros do Nordeste. Conosco, você aproveitará sua viagem
+        sem decepções, realizando roteiros incríveis sempre de forma pontual e
+        segura.
+      </p>
+      <p>Garantimos 100% sua satisfação!</p>
+      <p>Veja abaixo os depoimentos de alguns de nossos clientes:</p>
+      <iframe
+        width="480"
+        height="780"
+        src="https://www.youtube.com/embed/J24o5Zvo8P4"
+        title=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+      <iframe
+        width="480"
+        height="780"
+        src="https://www.youtube.com/embed/CZihiE2vx0U"
+        title=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+    </section>
+    <section id="transfer">
+      <h3>Transfer</h3>
+      <p>Está com viagem marcada? Reserve já seu transfer.</p>
+      <p>
+        Aqui nós garantimos que sua viagem será feita com segurança, em veículos
+        revisados e equipados com ar-condicionado.
+      </p>
+      <p>
+        Temos diversas opções de veículos a depender do número de pessoas.
+        Trabalhamos com ônibus, micro-ônibus, van, spin e carros de passeio
+      </p>
+      <p></p>
+      <p>
+        Para reservar seu transfer entre em contato conosco por whatsapp
+        clicando
+        <a href="https://wa.me/message/2ZVF5E4FUONTE1" target="_blank">aqui</a>.
+      </p>
+      <ul>
+        <li class="title">
+          Opções de Transfer
+          <ul>
+            <li>Aeroporto de Recife / Porto de Galinhas</li>
+            <li>Aeroporto de Recife / Praia dos Carneiros</li>
+            <li>Aeroporto de Recife / Maragogi - AL</li>
+            <li>Aeroporto de Recife / João Pessoa - PB</li>
+            <li>Porto de Galinhas / Aeroporto de Recife</li>
+            <li>Praia dos Carneiros / Aeroporto de Recife</li>
+            <li>Maragogi - Alagoas / Aeroporto de Recife</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="contato">
+      <h3>Contato</h3>
+      <p><a href="tel:+5581995234032">Tel: (81) 995234032</a></p>
+      <p>
+        <a href="mailto:passeioemportodegalinhas@gmail.com"
+          >passeioemportodegalinhas@gmail.com</a
+        >
+      </p>
+      <td>
+        <div>
+          <a
+            class="footer-icons"
+            href="http://www.youtube.com/channel/UCrsjnKudhoKsw30SNKXPYfw"
+            target="_blank"
+          >
+            <i class="fa fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i
+          ></a>
+          <a
+            class="footer-icons"
+            href="http://www.instagram.com/passeioemportodegalinhas/"
+            target="_blank"
+          >
+            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i
+          ></a>
+        </div>
+      </td>
+      <div
+        class="embedsocial-hashtag"
+        data-ref="1edc83f817b1bf5933a86e647e6fa95e7cbc9bb9"
+      ></div>
+      <script>
+        (function (d, s, id) {
+          var js;
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://embedsocial.com/cdn/ht.js";
+          d.getElementsByTagName("head")[0].appendChild(js);
+        })(document, "script", "EmbedSocialHashtagScript");
+      </script>
+    </section>
   </body>
   <footer>
     <section class="whatsapp">
@@ -283,21 +470,22 @@
           <img class="formas-pagto" src="./images/formas-pagto.png" />
         </td>
         <td>
-
           <div>
             <p>Acompanhe nossas redes sociais</p>
-          <a  class="footer-icons"
-            href="http://www.youtube.com/channel/UCrsjnKudhoKsw30SNKXPYfw"
-            target="_blank"
-          >
-            <i class="fa fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i
-          ></a>
-          <a class="footer-icons"
-            href="http://www.instagram.com/passeioemportodegalinhas/"
-            target="_blank"
-          >
-            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i
-          ></a>
+            <a
+              class="footer-icons"
+              href="http://www.youtube.com/channel/UCrsjnKudhoKsw30SNKXPYfw"
+              target="_blank"
+            >
+              <i class="fa fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i
+            ></a>
+            <a
+              class="footer-icons"
+              href="http://www.instagram.com/passeioemportodegalinhas/"
+              target="_blank"
+            >
+              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i
+            ></a>
           </div>
         </td>
       </tr>
