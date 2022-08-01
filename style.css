@@ -149,7 +149,7 @@ header img {
     bottom: 15em;
     background-color: #f3f4e7;
   }
-  .text-1 {
+  #text-1 {
     display: block;
     margin-top: 50px;
   }
@@ -402,4 +402,22 @@ iframe {
   font-weight: 300;
   color: black;
   font-size: clamp(0.5em, 1em + 0.5vw, 3em);
+}
+top {
+  --offset: 50px;
+
+  position: sticky;
+  bottom: 20px;
+  margin-right: 10px;
+  place-self: center;
+  margin-top: calc(100vh + var(--offset));
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  white-space: nowrap;
 }
